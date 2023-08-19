@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enjoy Chit Chatting!</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/chatStyle.css">
+    <script src="https://kit.fontawesome.com/6408690262.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="chatBox">
+        <div class="chatNav">
+            <div class="logo">BabbleHub</div>
+            <button type="button" onclick="location.href='/index.html'" class="btn">Leave Room</button>
+        </div>
+        <div class="chatBody">
+            <div class="info">
+        
+                  <div class="room">
+                    <div class="head">
+                        <i class="fa-solid fa-comments"></i>Rooms:
+                    </div>
+                    <div class="conts">
+                        <p id="rooms"></p>
+                        <!-- <p class="rooms">Dating</p>
+                        <p class="rooms">Gaming</p> -->
+                    </div>
+                  </div>
+                  <div class="users">
+                    <div class="head">
+                        <i class="fa-solid fa-users"></i>
+                        Users:
+                    </div>
+                    <div class="conts" id="userConst">
+                        <p class="roomUsers">Aman</p>
+                        <p class="roomUsers">Sheetal</p>
+                        <p class="roomUsers">Pranay</p>
+                    </div>
+                
+              </div>
+            </div>
+            <div class="chats">
+                <!-- <div class="mssgbox">
+                    <div class="msginfo">
+                        <span class="user">Mary</span>
+                        <span class="time">9:00pm</span>
+                    </div>
+                    <div class="msg">
+                        Hi! How are you?
+                    </div>
+                </div>
+
+                <div class="mssgbox">
+                    <div class="msginfo">
+                        <span class="user">Kirti</span>
+                        <span class="time">9:15pm</span>
+                    </div>
+                    <div class="msg">
+                        Great, just chilling.
+                    </div>
+                </div> -->
+
+            </div>
+        </div>
+        <div class="chatMessage"> 
+            <form action="" id="chat-form" > 
+                <input type="text" name="" id="usermsg" class="message" placeholder="Enter message...">
+                <button type="submit" class="sendbtn"><i class="fa-solid fa-paper-plane"></i>send</button>
+            </form>
+        </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.11.2/qs.min.js" integrity="sha512-vCegEXqPUYpZsTGz2lk0jaQ1psxtFeniVJACAXhMVxuoYa/N4nZkjoVFOxLwP7uGeQOoemiz7DQrIpRTj4IBPw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

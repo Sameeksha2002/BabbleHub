@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap');
+
+
+.chatBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 65%;
+    /* height: 12rem; */
+    margin: 2rem auto 0 auto;
+    /* padding: 1rem; */
+    background-color: #b042ff;
+    color: azure;
+   
+    border-radius: 4px;
+}
+
+.chatNav{
+display: flex;
+flex-direction: row;
+border-radius: 4px 4px ;
+justify-content: space-between;
+padding: 0.5rem 1rem;
+font-size: 1.3rem;
+background-color: #9b0fff;
+font-family: 'Shrikhand', cursive;
+}
+
+.btn{
+    padding: 0.2rem 0.5rem;
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebceff;
+    border: 0;
+    color: #a123fc;
+    transition-duration: 0.3s;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: yellow;
+    transition-duration: 0.3s;
+}
+
+
+.chatBody{
+    display: flex;
+    flex-direction: row;
+    margin:0;
+    max-height: 22rem;
+}
+ /* .chatSidebar{    
+ width: 25%; 
+}  */
+
+.info{
+    margin: 1rem ;
+    display: flex;
+    width: 25%;
+    flex-direction: column; 
+    font-size: 0.95rem;  
+    font-family: 'Roboto', sans-serif; 
+}
+.room{
+    margin-bottom: 2rem;
+}
+.head > i {
+    margin-right: 0.4rem;
+}
+.conts{
+    margin-top: 0.3rem ;
+    margin-left: 2rem;
+}
+.activeRoom{
+    background-color: #6e00bcaf;
+}
+#rooms, .roomUsers{
+    padding: 0.2rem 0.5rem;
+    transition-duration: 0.3s;
+}
+#rooms:hover, .roomUsers:hover{
+    background-color: #9b0fff;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+.chats{
+    width: 75%;
+    background-color: #fdf8ff;
+    padding: 1rem;
+    overflow-y: scroll;
+   
+}
+.chats .mssgbox{
+    background-color: #f3e8f8;
+    border-radius: 7px;
+    padding: 0.5rem;
+    color: #9b0fff;
+    font-size: 0.9rem;
+    font-family: 'Roboto', sans-serif; 
+    margin-bottom: 1rem;
+}
+.msginfo{
+    margin-bottom: 0.3rem;
+}
+.mssgbox .user{
+    font-weight: bold;
+}
+.mssgbox .time{
+    color: gray;
+    margin-left: 0.3rem;
+    font-size: 0.85rem;
+}
+.mssgbox .msg {
+    color: #141414;
+    font-size: 0.8rem;
+   
+}
+
+
+.chatMessage{
+    padding: 0.5rem 1rem;   
+    background-color: #9b0fff;
+    border-radius: 0 0 4px 4px;
+}
+.chatMessage > form{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+.message{
+    width: 100%;
+    padding: 0 0.3rem;
+    font-family: 'Roboto', sans-serif;
+}
+.sendbtn{
+    padding: 0.2rem 0.9rem;
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebceff;
+    border: 1px solid #a123fc;
+    color: #a123fc;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 1rem;
+    transition-duration: 0.3s;
+}
+
+.sendbtn > i {
+    padding-right: 0.2rem;
+}
+.sendbtn:hover {
+    cursor: pointer;
+    color: #ebceff;
+    border-color: #ebceff ;
+    background-color: #a123fc;
+    transition-duration: 0.3s;
+}

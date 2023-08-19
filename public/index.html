@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to BabbleHub</title>
+    <link rel="stylesheet" href="css/style.css">
+   
+</head>
+<body>
+    <div class="text">BabbleHub</div>
+    <div class="content">
+            <form action="chat.html" method="get">
+                <div>
+                    <label for="username">Username</label><br>
+                    <input type="text" name="username" id="username" class="fields" placeholder="Enter username.." required style="padding-left: 0.2rem; width: 99%;">
+                </div>
+                <div>
+                    <label for="room" >Room</label><br>
+                    <select name="room" room class="fields" >
+                        <option value="study" selected>Study</option>
+                        <option value="gaming">Gaming</option>
+                        <option value="dating">Dating</option>
+                        <option value="Coding">Coding</option>
+                    </select>
+                </div>
+                <div class="button"> 
+                    <input type="submit" value="Join chat" id="join">
+                </div> 
+            </form>
+    </div>
+
+</body>
+</html>
