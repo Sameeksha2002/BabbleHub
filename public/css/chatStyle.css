@@ -97,6 +97,10 @@ font-family: 'Shrikhand', cursive;
     font-family: 'Roboto', sans-serif; 
     margin-bottom: 1rem;
 }
+.chats .currmsg{
+    /* background-color: #edcafd; */
+    background-color: #a705f2;
+}
 .msginfo{
     margin-bottom: 0.3rem;
 }

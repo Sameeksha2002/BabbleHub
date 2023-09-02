@@ -48,9 +48,18 @@ chatform.addEventListener('submit', (e) => {
 //output message
 function outputMessage(message) {
   const div = document.createElement('div')
+
   div.classList.add('mssgbox')
+  let uname = message.username;
+  if (username == message.username) {
+    div.style.backgroundColor = "#f0d6fd";
+  } 
+  if (uname == username) {    
+    uname = "me";
+  }
+
     div.innerHTML = `<div class="msginfo">
-    <span class="user"> ${message.username}</span>
+    <span class="user"> ${uname}</span>
     <span class="time"> ${message.time}</span>
 </div>
 <div class="msg">
@@ -67,6 +76,7 @@ function OutputRoomName(room) {
 
 //output users in room
 function OutputUsers(users) {
+  
   usersList.innerHTML = `
-  ${users.map(user => `<p class="roomUsers">${user.username}</p>`).join('')} `
+  ${users.map(user => `<p class="roomUsers">${user.username}</p>`).join('')}`
 }
